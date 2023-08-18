@@ -12,5 +12,8 @@
 
     <h3><%= skills.skill %></h3>
     <h4>- <%= skills.level %></h4>
+    <form action="/skills/<%= skills.id %>?_method=DELETE" method="post">
+      <button type="submit">Delete</button>
+    </form>
   </body>
 </html>
